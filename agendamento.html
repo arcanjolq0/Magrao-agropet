@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar serviço | Magrão Agro Pet</title>
+  <meta name="description" content="Agende banho, tosa ou serviços veterinários na Magrão Agro Pet pelo WhatsApp." />
+  <meta name="theme-color" content="#1a9b91" />
+  <meta property="og:title" content="Agendar serviço | Magrão Agro Pet" />
+  <meta property="og:description" content="Preencha os dados do seu pet e confirme o agendamento pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-magrao-agropet.png" />
+  <link rel="icon" href="assets/logo-magrao-agropet.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-catalog.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-header.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-pro.css" media="(max-width: 768px)" />
+</head>
+<body>
+  <div class="topbar store-status-bar" id="storeStatusBar" aria-live="polite" hidden></div>
+
+  <header class="header">
+    <div class="header-main">
+      <a href="index.html" class="logo-link" aria-label="Magrão Agro Pet">
+        <img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" />
+      </a>
+
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Buscar ração, areia, antipulgas, petiscos, agro..." />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="contato.html" class="header-action"><span>📍</span><div><strong>Loja física</strong><small>Ver endereço</small></div></a>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="header-action"><span>💬</span><div><strong>WhatsApp</strong><small>Fale conosco</small></div></a>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="mobile-header-icon mobile-whatsapp-icon" aria-label="Chamar no WhatsApp">💬</a>
+        <button class="cart-button" id="cartBtn" aria-label="Abrir carrinho">🛒 <b id="cartCount">0</b></button>
+        <button class="menu-button" id="menuBtn" aria-label="Abrir catálogo">☰</button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="category-wrapper">
+        <button class="category-trigger">☰ Categorias</button>
+        <div class="mega-menu">
+          <div class="mega-feature"><span>🐾</span><div><strong>Compre por categoria</strong><small>Encontre rapidamente produtos por linha, categoria e necessidade do pet.</small></div><a class="secondary" href="produtos.html">Ver todos os produtos</a></div>
+          <div class="mega-grid" id="megaGrid"></div>
+        </div>
+      </div>
+      <a class="nav-link" href="produtos.html">Produtos</a>
+      <a class="nav-link" href="ofertas.html">Ofertas</a>
+      <a class="nav-link" href="servicos.html">Serviços</a>
+      <a class="nav-link" href="agendamento.html">Agendar serviço</a>
+      <a class="nav-link" href="marcas.html">Marcas</a>
+      <a class="nav-link" href="favoritos.html">Favoritos</a>
+      <a class="nav-link" href="contato.html">Contato</a>
+    </nav>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <button data-open-categories>☰ Ver categorias</button>
+      <a href="produtos.html">Produtos</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="agendamento.html">Agendar serviço</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero appointment-hero">
+      <div class="page-hero-inner">
+        <div>
+          <span class="kicker">Agendamento</span>
+          <h1>Agende banho, tosa ou atendimento veterinário.</h1>
+          <p>Preencha os dados do seu pet. A loja recebe o pedido no painel e você confirma o horário pelo WhatsApp.</p>
+        </div>
+        <div class="big-icon">🛁</div>
+      </div>
+    </section>
+
+    <section class="section appointment-section">
+      <div class="appointment-grid">
+        <form class="appointment-form" id="appointmentForm">
+          <label class="form-honeypot" aria-hidden="true">Empresa
+            <input type="text" name="empresa" tabindex="-1" autocomplete="off" />
+          </label>
+          <div class="section-head compact">
+            <div>
+              <span class="kicker">Dados do atendimento</span>
+              <h2>Solicitar agendamento</h2>
+            </div>
+          </div>
+
+          <label>Serviço desejado
+            <select name="servico" id="appointmentService" required>
+              <option value="banho">Banho</option>
+              <option value="tosa">Tosa</option>
+              <option value="veterinario">Serviços veterinários</option>
+            </select>
+          </label>
+
+          <div class="form-two-cols">
+            <label>Seu nome
+              <input name="nome_cliente" autocomplete="name" maxlength="140" required placeholder="Ex: Gabriel" />
+            </label>
+            <label>Seu WhatsApp
+              <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" maxlength="40" required placeholder="Ex: (47) 99999-9999" />
+            </label>
+          </div>
+
+          <div class="form-two-cols">
+            <label>Nome do pet
+              <input name="pet_nome" maxlength="120" placeholder="Ex: Thor" />
+            </label>
+            <label>Tipo de pet
+              <select name="tipo_pet">
+                <option value="">Selecione</option>
+                <option>Cachorro</option>
+                <option>Gato</option>
+                <option>Outro</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Porte ou peso aproximado
+            <input name="porte_pet" maxlength="80" placeholder="Ex: pequeno, médio, 12kg..." />
+          </label>
+
+          <div class="form-two-cols">
+            <label>Data preferida
+              <input type="date" name="data_preferida" />
+            </label>
+            <label>Período preferido
+              <select name="periodo_preferido">
+                <option value="">A combinar</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Qualquer horário disponível</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Observações
+            <textarea name="observacoes" maxlength="1200" placeholder="Ex: pet precisa de tosa higiênica, tem alergia, temperamento, preferência de horário..."></textarea>
+          </label>
+
+          <div class="appointment-status-box" id="appointmentStatus" aria-live="polite"></div>
+
+          <button class="primary full" type="submit">Enviar e confirmar pelo WhatsApp</button>
+          <p class="form-note">O envio registra a solicitação no painel da loja e abre uma mensagem pronta no WhatsApp.</p>
+        </form>
+
+        <aside class="appointment-benefits">
+          <article><span>✅</span><strong>Pedido organizado</strong><small>A loja recebe serviço, pet, data e observações em uma única mensagem.</small></article>
+          <article><span>💬</span><strong>Confirmação pelo WhatsApp</strong><small>O horário fica sujeito à confirmação da equipe da loja.</small></article>
+          <article><span>🧾</span><strong>Histórico no painel</strong><small>A loja acompanha sua solicitação e confirma pelo WhatsApp.</small></article>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-grid">
+      <div><img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" /><p data-store-footer-description>Loja online da Magrão Agro Pet para vender produtos da loja física com catálogo, páginas de produto, carrinho e pedidos pelo WhatsApp.</p></div>
+      <div><h4>Comprar</h4><a href="produtos.html">Produtos</a><a href="ofertas.html">Ofertas</a><a href="compra-mensal.html">Compra mensal</a><a href="marcas.html">Marcas</a></div>
+      <div><h4>Serviços</h4><a href="servicos.html">Serviços</a><a href="agendamento.html">Agendar serviço</a><a href="favoritos.html">Favoritos</a><a href="contato.html">Contato</a></div>
+      <div><h4>Atendimento</h4><a href="https://wa.me/5547996329281" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/magraoagropet/" target="_blank" rel="noopener">Instagram</a><p data-store-address>R. Ten. Antônio João, 1136 - Bom Retiro, Joinville - SC, 89222-401</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Magrão Agro Pet</span></div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5547996329281" target="_blank" rel="noopener">💬</a>
+  <nav class="bottom-nav" data-mobile-bottom-nav>
+    <a href="index.html" data-nav="home"><span>🏠</span><strong>Início</strong></a>
+    <button type="button" data-open-categories data-nav="categories"><span>▦</span><strong>Categorias</strong></button>
+    <button type="button" data-focus-search data-nav="search"><span>🔎</span><strong>Buscar</strong></button>
+    <a href="favoritos.html" data-nav="favorites"><span>♡</span><strong>Favoritos</strong></a>
+    <button type="button" data-open-cart data-nav="cart"><span>🛒</span><strong>Carrinho</strong><b data-cart-count>0</b></button>
+  </nav>
+  <button class="mobile-floating-cart" data-open-cart aria-label="Abrir carrinho"><span>🛒</span><strong data-cart-count>0</strong></button>
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="mobile-filter-overlay" id="mobileFilterOverlay"></div>
+  <aside class="mobile-categories-panel" id="mobileCategoriesPanel"><div class="mobile-panel-head"><strong>Categorias</strong><button data-close-categories>×</button></div><div class="mobile-category-list" id="mobileCategoryList"></div></aside>
+  <aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><div><strong>Carrinho</strong><small>Finalize pelo WhatsApp</small></div><button id="closeCart" data-close-cart>×</button></div><div class="cart-summary-label">Itens do seu pedido</div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="total"><span>Total aproximado</span><strong id="cartTotal">R$ 0,00</strong></div><div class="cart-warning">Valores e disponibilidade sujeitos à confirmação da loja.</div><button class="primary full" id="whatsappCheckout">Enviar pedido pelo WhatsApp</button><button class="continue-shopping" data-continue-shopping>Continuar comprando</button><button class="clear" id="clearCart" data-clear-cart>Limpar carrinho</button></div></aside>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/appointment.js"></script>
+</body>
+</html>

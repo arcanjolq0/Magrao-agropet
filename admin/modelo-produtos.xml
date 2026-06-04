@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produtos>
+  <produto>
+    <sku>RACAO-TESTE-001</sku>
+    <nome>Ração Teste Premium</nome>
+    <valor>59.90</valor>
+    <categoria>Cachorros</categoria>
+    <descricao>Produto de teste para importação XML</descricao>
+    <imagem>uploads/produtos/exemplo.webp</imagem>
+    <estoque>10</estoque>
+    <estoque_minimo>3</estoque_minimo>
+    <mostrar_quantidade_estoque>0</mostrar_quantidade_estoque>
+    <ativo>1</ativo>
+  </produto>
+</produtos>

@@ -1,0 +1,338 @@
+/* Mobile Catalog Density - Magrão Agro Pet
+   Camada responsiva para deixar vitrines/listagens com cara de e-commerce mobile.
+   Afeta somente telas até 768px. Desktop preservado. */
+
+@media (max-width: 768px){
+  html,body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  /* Estrutura das páginas de produtos/ofertas/favoritos */
+  .catalog-layout{
+    padding:10px 12px 22px!important;
+    display:block!important;
+  }
+
+  .catalog-layout > div,
+  main,
+  section{
+    min-width:0!important;
+  }
+
+  .catalog-sidebar{
+    display:none!important;
+  }
+
+  .mobile-filter-bar{
+    display:flex!important;
+    gap:7px!important;
+    overflow-x:auto!important;
+    padding:0 0 8px!important;
+    margin:0 0 7px!important;
+    scroll-snap-type:x proximity;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .mobile-filter-bar::-webkit-scrollbar{display:none!important}
+
+  .mobile-filter-chip,
+  .sub-filter-chip{
+    flex:0 0 auto!important;
+    min-height:30px!important;
+    width:auto!important;
+    padding:7px 11px!important;
+    border-radius:999px!important;
+    font-size:.66rem!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    box-shadow:0 4px 10px rgba(24,33,31,.045)!important;
+  }
+
+  .catalog-toolbar{
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    align-items:center!important;
+    gap:8px!important;
+    margin:2px 0 10px!important;
+    padding:0!important;
+  }
+
+  .catalog-toolbar p{
+    margin:0!important;
+    font-size:.76rem!important;
+    line-height:1.25!important;
+    font-weight:900!important;
+    color:#40524e!important;
+  }
+
+  .catalog-toolbar select{
+    width:auto!important;
+    max-width:142px!important;
+    min-height:32px!important;
+    padding:0 24px 0 10px!important;
+    border-radius:999px!important;
+    font-size:.66rem!important;
+    font-weight:900!important;
+  }
+
+  /* Listagem mobile: 2 produtos por linha, sem card gigante. */
+  #productsGrid.products-grid,
+  #offersGrid.products-grid,
+  #favoritesGrid.products-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:11px!important;
+    padding:0!important;
+    align-items:stretch!important;
+  }
+
+  .products-grid .product-card{
+    min-width:0!important;
+    width:100%!important;
+    border-radius:16px!important;
+    overflow:hidden!important;
+    box-shadow:0 7px 18px rgba(24,33,31,.075)!important;
+    border:1px solid rgba(24,33,31,.085)!important;
+    transform:none!important;
+  }
+
+  .products-grid .product-card:hover{
+    transform:none!important;
+  }
+
+  .products-grid .product-image{
+    aspect-ratio:1 / 1!important;
+    min-height:0!important;
+    height:auto!important;
+    border-radius:16px 16px 0 0!important;
+    background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.88),transparent 17%),radial-gradient(circle at 84% 74%,rgba(244,201,52,.20),transparent 24%),linear-gradient(135deg,#e9fbf7,#fff2de)!important;
+  }
+
+  .products-grid .product-image img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:contain!important;
+    padding:10px!important;
+  }
+
+  .products-grid .product-image > span{
+    width:50%!important;
+    max-width:72px!important;
+    border-radius:18px!important;
+    font-size:2rem!important;
+    box-shadow:0 8px 18px rgba(24,33,31,.08)!important;
+  }
+
+  .products-grid .product-tag{
+    top:7px!important;
+    left:7px!important;
+    max-width:76px!important;
+    padding:5px 7px!important;
+    font-size:.54rem!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+
+  .products-grid .favorite-btn{
+    top:7px!important;
+    right:7px!important;
+    width:29px!important;
+    height:29px!important;
+    font-size:.92rem!important;
+    box-shadow:0 6px 14px rgba(24,33,31,.12)!important;
+  }
+
+  .products-grid .product-info{
+    padding:9px!important;
+    min-width:0!important;
+  }
+
+  .products-grid .product-category{
+    display:block!important;
+    max-width:100%!important;
+    font-size:.54rem!important;
+    letter-spacing:.45px!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+
+  .products-grid .product-info h3{
+    margin-top:5px!important;
+    min-height:34px!important;
+    font-size:.78rem!important;
+    line-height:1.18!important;
+    letter-spacing:-.05px!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:2!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+
+  .products-grid .product-info p{
+    display:none!important;
+  }
+
+  .products-grid .product-footer{
+    gap:7px!important;
+    padding-top:7px!important;
+  }
+
+  .products-grid .price-box{
+    display:block!important;
+  }
+
+  .products-grid .price-box del{
+    display:block!important;
+    font-size:.6rem!important;
+    line-height:1.1!important;
+  }
+
+  .products-grid .price-box strong{
+    display:block!important;
+    color:var(--orange-700)!important;
+    font-size:.96rem!important;
+    line-height:1.08!important;
+    letter-spacing:-.2px!important;
+  }
+
+  .products-grid .consult-card .price-box strong{
+    color:var(--teal-900)!important;
+    font-size:.74rem!important;
+    line-height:1.15!important;
+  }
+
+  .products-grid .stock{
+    display:none!important;
+  }
+
+  .products-grid .card-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:0!important;
+    position:static!important;
+  }
+
+  .products-grid .add-to-cart,
+  .products-grid .qty-add{
+    width:100%!important;
+    min-height:32px!important;
+    height:32px!important;
+    border-radius:999px!important;
+    padding:0 8px!important;
+    font-size:.66rem!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  .products-grid .view-product{
+    display:none!important;
+  }
+
+  .empty-state{
+    grid-column:1 / -1!important;
+    border-radius:18px!important;
+    padding:20px 14px!important;
+    font-size:.9rem!important;
+  }
+
+  /* Home: vitrine horizontal mais densa, mostrando 2 cards + parte do terceiro. */
+  .home-products-section .products-grid{
+    display:flex!important;
+    grid-template-columns:none!important;
+    gap:10px!important;
+    overflow-x:auto!important;
+    padding:2px 14px 12px!important;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .home-products-section .products-grid::-webkit-scrollbar{display:none!important}
+
+  .home-products-section .product-card{
+    flex:0 0 clamp(148px,43vw,178px)!important;
+    width:clamp(148px,43vw,178px)!important;
+    min-width:clamp(148px,43vw,178px)!important;
+    max-width:178px!important;
+    scroll-snap-align:start!important;
+    border-radius:16px!important;
+  }
+
+  .home-products-section .product-image{
+    aspect-ratio:1 / 1!important;
+    min-height:0!important;
+  }
+
+  .home-products-section .product-image > span{
+    font-size:2rem!important;
+    max-width:70px!important;
+  }
+
+  .home-products-section .product-info{
+    padding:9px!important;
+  }
+
+  .home-products-section .product-info h3{
+    min-height:34px!important;
+    font-size:.78rem!important;
+    line-height:1.18!important;
+  }
+
+  .home-products-section .product-info p{
+    display:none!important;
+  }
+
+  .home-products-section .price-box strong{
+    font-size:.96rem!important;
+  }
+
+  .home-products-section .consult-card .price-box strong{
+    font-size:.74rem!important;
+  }
+
+  .home-products-section .stock{
+    display:none!important;
+  }
+
+  .home-products-section .card-actions{
+    position:static!important;
+    display:grid!important;
+    grid-template-columns:1fr!important;
+  }
+
+  .home-products-section .add-to-cart{
+    width:100%!important;
+    height:32px!important;
+    min-height:32px!important;
+    color:white!important;
+    border-radius:999px!important;
+    font-size:.66rem!important;
+  }
+
+  .home-products-section .add-to-cart::before{
+    content:none!important;
+  }
+
+}
+
+/* Ajuste extra para aparelhos muito estreitos. */
+@media (max-width:380px){
+  .catalog-layout{padding-left:10px!important;padding-right:10px!important}
+  #productsGrid.products-grid,
+  #offersGrid.products-grid,
+  #favoritesGrid.products-grid{gap:9px!important}
+  .products-grid .product-info{padding:8px!important}
+  .products-grid .product-info h3{font-size:.74rem!important}
+  .products-grid .price-box strong{font-size:.9rem!important}
+  .products-grid .add-to-cart,.products-grid .qty-add{font-size:.62rem!important}
+  .home-products-section .product-card{
+    flex-basis:clamp(142px,42vw,164px)!important;
+    width:clamp(142px,42vw,164px)!important;
+    min-width:clamp(142px,42vw,164px)!important;
+  }
+}

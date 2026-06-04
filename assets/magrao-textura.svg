@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <defs>
+    <style>
+      .g { fill: #d9b25c; fill-opacity: 0.085; }
+      .s { stroke: #d9b25c; stroke-opacity: 0.085; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+
+    <g id="paw">
+      <ellipse class="g" cx="20" cy="28" rx="17" ry="12"/>
+      <circle class="g" cx="8" cy="10" r="5"/>
+      <circle class="g" cx="20" cy="5" r="5"/>
+      <circle class="g" cx="32" cy="10" r="5"/>
+      <circle class="g" cx="24" cy="16" r="4"/>
+    </g>
+
+    <g id="bone">
+      <circle class="g" cx="8" cy="10" r="8"/>
+      <circle class="g" cx="8" cy="26" r="8"/>
+      <circle class="g" cx="54" cy="10" r="8"/>
+      <circle class="g" cx="54" cy="26" r="8"/>
+      <rect class="g" x="8" y="10" width="46" height="16" rx="8"/>
+    </g>
+
+    <g id="fish">
+      <ellipse class="g" cx="26" cy="20" rx="20" ry="12"/>
+      <polygon class="g" points="44,20 60,8 60,32"/>
+      <circle cx="18" cy="18" r="2.2" fill="#d9b25c" fill-opacity="0.085"/>
+    </g>
+
+    <g id="leaf">
+      <path class="g" d="M10 36 C10 8, 44 6, 54 18 C52 46, 24 54, 10 36 Z"/>
+      <path class="s" d="M18 38 C28 26, 34 22, 48 16"/>
+    </g>
+  </defs>
+
+  <!-- deliberately scattered at many different positions, scales and angles -->
+  <g transform="translate(22,18) rotate(-18) scale(0.95)"><use href="#paw"/></g>
+  <g transform="translate(126,34) rotate(37) scale(1.08)"><use href="#bone"/></g>
+  <g transform="translate(232,12) rotate(-9) scale(0.82)"><use href="#fish"/></g>
+  <g transform="translate(336,30) rotate(58) scale(0.98)"><use href="#leaf"/></g>
+  <g transform="translate(452,14) rotate(-29) scale(0.68)"><use href="#paw"/></g>
+
+  <g transform="translate(-6,104) rotate(63) scale(0.72)"><use href="#leaf"/></g>
+  <g transform="translate(84,116) rotate(-31) scale(0.88)"><use href="#fish"/></g>
+  <g transform="translate(204,96) rotate(21) scale(1.02)"><use href="#paw"/></g>
+  <g transform="translate(308,126) rotate(-48) scale(0.86)"><use href="#bone"/></g>
+  <g transform="translate(430,108) rotate(13) scale(0.92)"><use href="#leaf"/></g>
+
+  <g transform="translate(42,210) rotate(-54) scale(1.12)"><use href="#bone"/></g>
+  <g transform="translate(152,190) rotate(16) scale(0.72)"><use href="#paw"/></g>
+  <g transform="translate(258,224) rotate(-22) scale(0.94)"><use href="#leaf"/></g>
+  <g transform="translate(364,196) rotate(42) scale(0.84)"><use href="#fish"/></g>
+  <g transform="translate(458,212) rotate(-8) scale(1.0)"><use href="#paw"/></g>
+
+  <g transform="translate(12,308) rotate(11) scale(0.86)"><use href="#fish"/></g>
+  <g transform="translate(110,332) rotate(-44) scale(1.06)"><use href="#leaf"/></g>
+  <g transform="translate(228,310) rotate(57) scale(0.74)"><use href="#bone"/></g>
+  <g transform="translate(322,334) rotate(-17) scale(0.98)"><use href="#paw"/></g>
+  <g transform="translate(432,316) rotate(28) scale(0.78)"><use href="#fish"/></g>
+
+  <g transform="translate(34,420) rotate(-36) scale(0.92)"><use href="#paw"/></g>
+  <g transform="translate(144,432) rotate(19) scale(0.82)"><use href="#bone"/></g>
+  <g transform="translate(246,408) rotate(-61) scale(1.08)"><use href="#leaf"/></g>
+  <g transform="translate(352,430) rotate(33) scale(0.76)"><use href="#fish"/></g>
+  <g transform="translate(450,416) rotate(-23) scale(0.9)"><use href="#leaf"/></g>
+
+  <!-- edge breakups to avoid obvious tiling -->
+  <g transform="translate(492,246) rotate(70) scale(0.74)"><use href="#bone"/></g>
+  <g transform="translate(-10,450) rotate(48) scale(0.66)"><use href="#fish"/></g>
+  <g transform="translate(500,54) rotate(-41) scale(0.58)"><use href="#paw"/></g>
+  <g transform="translate(238,492) rotate(7) scale(0.64)"><use href="#leaf"/></g>
+</svg>

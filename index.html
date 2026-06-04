@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Magrão Agro Pet | Loja Online em Joinville</title>
+  <meta name="description" content="Magrão Agro Pet em Joinville: rações, farmácia pet, acessórios, agro e jardim com catálogo online e pedido pelo WhatsApp." />
+  <meta name="theme-color" content="#1a9b91" />
+
+  <meta property="og:title" content="Magrão Agro Pet | Loja Online em Joinville" />
+  <meta property="og:description" content="Magrão Agro Pet em Joinville: rações, farmácia pet, acessórios, agro e jardim com catálogo online e pedido pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-magrao-agropet.png" />
+
+  <link rel="icon" href="assets/logo-magrao-agropet.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-home.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-catalog.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-header.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-pro.css" media="(max-width: 768px)" />
+</head>
+<body>
+
+  <div class="topbar store-status-bar" id="storeStatusBar" aria-live="polite" hidden></div>
+
+  <header class="header">
+    <div class="header-main">
+      <button class="menu-button" id="menuBtn" aria-label="Abrir catálogo">☰</button>
+      <a href="index.html" class="logo-link" aria-label="Magrão Agro Pet">
+        <img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" />
+      </a>
+
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Buscar ração, areia, antipulgas, petiscos, agro..." />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="contato.html" class="header-action">
+          <span>📍</span>
+          <div><strong>Loja física</strong><small>Ver endereço</small></div>
+        </a>
+
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="header-action">
+          <span>💬</span>
+          <div><strong>WhatsApp</strong><small>Fale conosco</small></div>
+        </a>
+
+        <a href="favoritos.html" class="mobile-header-icon mobile-user-icon" aria-label="Minha conta e favoritos">👤</a>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="mobile-header-icon mobile-whatsapp-icon" aria-label="Chamar no WhatsApp">💬</a>
+        <button class="cart-button" id="cartBtn" aria-label="Abrir carrinho">🛒 <b id="cartCount">0</b></button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="category-wrapper">
+        <button class="category-trigger">☰ Categorias</button>
+        <div class="mega-menu">
+          <div class="mega-feature">
+            <span>🐾</span>
+            <div>
+              <strong>Compre por categoria</strong>
+              <small>Encontre rapidamente produtos por linha, categoria e necessidade do pet.</small>
+            </div>
+            <a class="secondary" href="produtos.html">Ver todos os produtos</a>
+          </div>
+          <div class="mega-grid" id="megaGrid"></div>
+        </div>
+      </div>
+      <a class="nav-link" href="produtos.html">Produtos</a>
+      <a class="nav-link" href="ofertas.html">Ofertas</a>
+      <a class="nav-link" href="servicos.html">Serviços</a>
+      <a class="nav-link" href="marcas.html">Marcas</a>
+      <a class="nav-link" href="favoritos.html">Favoritos</a>
+      <a class="nav-link" href="contato.html">Contato</a>
+    </nav>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <button data-open-categories>☰ Ver categorias</button>
+      <a href="produtos.html">Produtos</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="mobile-home-only mobile-promo-strip" aria-label="Atendimento rápido Magrão Agro Pet">
+      <a href="https://wa.me/5547996329281" target="_blank" rel="noopener"><span>💬</span> Atendimento pelo WhatsApp</a>
+      <a href="servicos.html"><span>✂️</span> Banho e tosa</a>
+      <a href="contato.html"><span>📍</span> Retirada na loja</a>
+      <a href="compra-mensal.html"><span>🥣</span> Compra mensal</a>
+    </section>
+
+    <section class="hero">
+      <div class="hero-main hero-carousel image-hero-carousel" id="heroCarousel">
+        <article class="hero-slide active image-slide">
+          <a href="servicos.html" aria-label="Banho, tosa e atendimento veterinário">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/carousel/mobile/carousel-banho-tosa-veterinario-mobile.webp" type="image/webp" />
+              <img src="assets/carousel/carousel-banho-tosa-veterinario-clean.jpg" alt="Banho e Tosa + Atendimento Veterinário Magrão Agro Pet" fetchpriority="high" decoding="async" />
+            </picture>
+          </a>
+        </article>
+
+        <article class="hero-slide image-slide">
+          <a href="produtos.html" aria-label="Rações, petiscos e cuidados para seu pet">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/carousel/mobile/carousel-produtos-pet-mobile.webp" type="image/webp" />
+              <img src="assets/carousel/carousel-produtos-pet.jpg" alt="Rações, Petiscos e Cuidados para seu pet Magrão Agro Pet" loading="lazy" decoding="async" />
+            </picture>
+          </a>
+        </article>
+
+        <article class="hero-slide image-slide">
+          <a href="produtos.html?categoria=Agro%20%26%20Jardim" aria-label="Agro e Jardim">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/carousel/mobile/carousel-agro-jardim-mobile.webp" type="image/webp" />
+              <img src="assets/carousel/carousel-agro-jardim.jpg" alt="Agro e Jardim para sua rotina Magrão Agro Pet" loading="lazy" decoding="async" />
+            </picture>
+          </a>
+        </article>
+      </div>
+
+      <aside class="side-banners">
+        <article class="side-banner orange">
+          <span>Compra mensal de ração</span>
+          <h3>Nunca deixe a ração do seu pet faltar</h3>
+          <p>Programe sua reposição mensal de forma rápida pelo WhatsApp.</p>
+          <a href="compra-mensal.html">Agendar agora</a>
+        </article>
+        <article class="side-banner green">
+          <span>Contato</span>
+          <h3>Mapa, endereço, horário e WhatsApp da loja</h3>
+          <a href="contato.html">Ver contato</a>
+        </article>
+      </aside>
+    </section>
+
+    <section class="section home-products-section" id="homeProductsSection">
+      <div class="section-head">
+        <div><span class="kicker">Destaques</span><h2>Produtos em destaque.</h2></div>
+        <a class="outline-btn" href="produtos.html">Abrir catálogo completo</a>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <section class="section monthly-home-cta">
+      <div class="monthly-cta-card">
+        <div>
+          <span class="kicker">Compra mensal</span>
+          <h2>Programe a ração do mês e evite ficar sem.</h2>
+          <p>O cliente informa a ração, quantidade e melhor dia. A loja confirma tudo pelo WhatsApp antes da compra.</p>
+        </div>
+        <a class="primary" href="compra-mensal.html">Agendar compra mensal</a>
+      </div>
+    </section>
+
+    <section class="mobile-home-only mobile-store-services" aria-label="Serviços da loja">
+      <div class="mobile-section-title">
+        <span>Serviços</span>
+        <h2>Facilidades da Magrão.</h2>
+      </div>
+      <div class="mobile-service-grid">
+        <a href="servicos.html"><span>✂️</span><strong>Banho e Tosa</strong><small>Agende pelo WhatsApp</small></a>
+        <a href="servicos.html"><span>🩺</span><strong>Consultas Veterinárias</strong><small>Atendimento na loja</small></a>
+        <a href="contato.html"><span>🚚</span><strong>Entrega local</strong><small>Consulte disponibilidade</small></a>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener"><span>💬</span><strong>WhatsApp</strong><small>Pedido direto</small></a>
+        <a href="contato.html"><span>🛍️</span><strong>Retirada na loja</strong><small>Compra prática</small></a>
+      </div>
+    </section>
+
+    <section class="mobile-home-only mobile-advantages" aria-label="Vantagens de comprar na Magrão">
+      <div class="mobile-section-title">
+        <span>Vantagens</span>
+        <h2>Comprar fica mais simples.</h2>
+      </div>
+      <div class="mobile-advantage-grid">
+        <article><span>💬</span><strong>Atendimento pelo WhatsApp</strong></article>
+        <article><span>🛍️</span><strong>Retire na loja</strong></article>
+        <article><span>🚚</span><strong>Entrega local</strong></article>
+        <article><span>🌱</span><strong>Produtos pet e agro</strong></article>
+        <article><span>🩺</span><strong>Consultas veterinárias</strong></article>
+      </div>
+    </section>
+
+    <section class="mobile-home-only mobile-care-section" aria-label="Cuidados essenciais">
+      <div class="mobile-section-title">
+        <span>Cuidados essenciais</span>
+        <h2>Serviços e produtos para a rotina do pet.</h2>
+      </div>
+      <div class="mobile-care-grid">
+        <a href="servicos.html" class="care-card large"><span>✂️</span><strong>Banho e Tosa</strong><small>Higiene, cuidado e conforto.</small></a>
+        <a href="servicos.html" class="care-card"><span>🩺</span><strong>Consultas Veterinárias</strong><small>Orientação para seu pet.</small></a>
+        <a href="produtos.html?busca=higiene" class="care-card"><span>🧴</span><strong>Higiene e conforto</strong><small>Itens para o dia a dia.</small></a>
+        <a href="produtos.html?categoria=Farmácia%20Pet" class="care-card"><span>💊</span><strong>Saúde do pet</strong><small>Farmácia e proteção.</small></a>
+      </div>
+    </section>
+
+    <section class="mobile-home-only mobile-tips-section" aria-label="Dicas para seu pet">
+      <div class="mobile-section-title">
+        <span>Dicas para seu pet</span>
+        <h2>Escolhas rápidas para cuidar melhor.</h2>
+      </div>
+      <div class="mobile-tips-scroll">
+        <a href="produtos.html?busca=ração"><strong>Como escolher a ração?</strong><small>Veja opções e fale com a loja.</small></a>
+        <a href="produtos.html?busca=higiene"><strong>Rotina de higiene</strong><small>Produtos para banho e limpeza.</small></a>
+        <a href="servicos.html"><strong>Quando agendar banho e tosa?</strong><small>Confira os serviços disponíveis.</small></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" />
+        <p data-store-footer-description>Loja online da Magrão Agro Pet para vender produtos da loja física com catálogo, páginas de produto, carrinho e pedidos pelo WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Comprar</h4>
+        <a href="produtos.html">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="compra-mensal.html">Compra mensal</a>
+        <a href="marcas.html">Marcas</a>
+            </div>
+      <div>
+        <h4>Institucional</h4>
+        <a href="servicos.html">Serviços</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="contato.html">Contato</a>
+        <a data-store-maps-link href="https://www.google.com/maps/search/?api=1&query=R.%20Ten.%20Ant%C3%B4nio%20Jo%C3%A3o%2C%201136%20-%20Bom%20Retiro%2C%20Joinville%20-%20SC%2C%2089222-401" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/magraoagropet/" target="_blank" rel="noopener">Instagram</a>
+        <p data-store-address>R. Ten. Antônio João, 1136 - Bom Retiro, Joinville - SC, 89222-401</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Magrão Agro Pet</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5547996329281" target="_blank" rel="noopener">💬</a>
+
+  <nav class="bottom-nav" data-mobile-bottom-nav>
+    <a href="index.html" data-nav="home"><span>🏠</span><strong>Início</strong></a>
+    <button type="button" data-open-categories data-nav="categories"><span>▦</span><strong>Categorias</strong></button>
+    <button type="button" data-focus-search data-nav="search"><span>🔎</span><strong>Buscar</strong></button>
+    <a href="favoritos.html" data-nav="favorites"><span>♡</span><strong>Favoritos</strong></a>
+    <button type="button" data-open-cart data-nav="cart"><span>🛒</span><strong>Carrinho</strong><b data-cart-count>0</b></button>
+  </nav>
+
+  <button class="mobile-floating-cart" data-open-cart aria-label="Abrir carrinho">
+    <span>🛒</span>
+    <strong data-cart-count>0</strong>
+  </button>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="mobile-filter-overlay" id="mobileFilterOverlay"></div>
+
+  <aside class="mobile-categories-panel" id="mobileCategoriesPanel">
+    <div class="mobile-panel-head">
+      <strong>Categorias</strong>
+      <button data-close-categories>×</button>
+    </div>
+    <div class="mobile-category-list" id="mobileCategoryList"></div>
+  </aside>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <div><strong>Carrinho</strong><small>Finalize pelo WhatsApp</small></div>
+      <button id="closeCart" data-close-cart>×</button>
+    </div>
+
+    <div class="cart-summary-label">Itens do seu pedido</div>
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="total"><span>Total aproximado</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <div class="cart-warning">Valores e disponibilidade sujeitos à confirmação da loja.</div>
+      <button class="primary full" id="whatsappCheckout">Enviar pedido pelo WhatsApp</button>
+      <button class="continue-shopping" data-continue-shopping>Continuar comprando</button>
+      <button class="clear" id="clearCart" data-clear-cart>Limpar carrinho</button>
+    </div>
+  </aside>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "PetStore", "name": "Magrão Agro Pet", "address": {"@type": "PostalAddress", "streetAddress": "R. Ten. Antônio João, 1136 - Bom Retiro", "addressLocality": "Joinville", "addressRegion": "SC", "postalCode": "89222-401", "addressCountry": "BR"}, "telephone": "+55 47 99632-9281", "url": "https://www.instagram.com/magraoagropet/", "openingHours": ["Mo-Fr 08:00-19:00", "Sa 08:00-14:00"]}</script>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/mobile-home.js"></script>
+
+</body>
+</html>

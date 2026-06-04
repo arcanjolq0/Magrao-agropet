@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Compra mensal de ração | Magrão Agro Pet</title>
+  <meta name="description" content="Agende sua compra mensal de ração na Magrão Agro Pet em Joinville e receba atendimento pelo WhatsApp." />
+  <meta name="theme-color" content="#1a9b91" />
+
+  <meta property="og:title" content="Compra mensal de ração | Magrão Agro Pet" />
+  <meta property="og:description" content="Programe a compra mensal de ração do seu pet com atendimento pelo WhatsApp da Magrão Agro Pet." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-magrao-agropet.png" />
+
+  <link rel="icon" href="assets/logo-magrao-agropet.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-catalog.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-header.css" media="(max-width: 768px)" />
+  <link rel="stylesheet" href="css/mobile-pro.css" media="(max-width: 768px)" />
+</head>
+<body>
+
+
+  <div class="topbar store-status-bar" id="storeStatusBar" aria-live="polite" hidden></div>
+
+  <header class="header">
+    <div class="header-main">
+      <a href="index.html" class="logo-link" aria-label="Magrão Agro Pet">
+        <img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" />
+      </a>
+
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Buscar ração, areia, antipulgas, petiscos, agro..." />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="contato.html" class="header-action">
+          <span>📍</span>
+          <div><strong>Loja física</strong><small>Ver endereço</small></div>
+        </a>
+
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="header-action">
+          <span>💬</span>
+          <div><strong>WhatsApp</strong><small>Fale conosco</small></div>
+        </a>
+
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener" class="mobile-header-icon mobile-whatsapp-icon" aria-label="Chamar no WhatsApp">💬</a>
+        <button class="cart-button" id="cartBtn" aria-label="Abrir carrinho">🛒 <b id="cartCount">0</b></button>
+        <button class="menu-button" id="menuBtn" aria-label="Abrir catálogo">☰</button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="category-wrapper">
+        <button class="category-trigger">☰ Categorias</button>
+        <div class="mega-menu">
+          <div class="mega-feature">
+            <span>🐾</span>
+            <div>
+              <strong>Compre por categoria</strong>
+              <small>Encontre rapidamente produtos por linha, categoria e necessidade do pet.</small>
+            </div>
+            <a class="secondary" href="produtos.html">Ver todos os produtos</a>
+          </div>
+          <div class="mega-grid" id="megaGrid"></div>
+        </div>
+      </div>
+      <a class="nav-link" href="produtos.html">Produtos</a>
+      <a class="nav-link" href="ofertas.html">Ofertas</a>
+      <a class="nav-link" href="servicos.html">Serviços</a>
+      <a class="nav-link" href="marcas.html">Marcas</a>
+      <a class="nav-link" href="favoritos.html">Favoritos</a>
+      <a class="nav-link" href="contato.html">Contato</a>
+    </nav>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <button data-open-categories>☰ Ver categorias</button>
+      <a href="produtos.html">Produtos</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section monthly-hero-section">
+      <div class="monthly-hero-card">
+        <div>
+          <span class="kicker">Compra programada</span>
+          <h1>Agende a compra mensal da ração do seu pet.</h1>
+          <p>O cliente escolhe a ração, frequência, quantidade, melhor dia e forma de recebimento. A loja recebe uma mensagem organizada pelo WhatsApp para confirmar preço, disponibilidade e entrega.</p>
+          <div class="monthly-hero-actions">
+            <a class="primary" href="#formulario-compra-mensal">Agendar compra mensal</a>
+            <a class="outline-btn" href="produtos.html?busca=ração">Ver rações</a>
+          </div>
+        </div>
+        <div class="monthly-hero-icon" aria-hidden="true">🥣</div>
+      </div>
+    </section>
+
+    <section class="section monthly-benefits-section">
+      <div class="section-head">
+        <div><span class="kicker">Como funciona</span><h2>Mais praticidade para não faltar ração.</h2></div>
+        <p>A compra mensal não cobra automaticamente. Ela gera um pedido de agendamento para a loja confirmar pelo WhatsApp.</p>
+      </div>
+      <div class="monthly-steps-grid">
+        <article><span>1</span><strong>Cliente informa a ração</strong><small>Nome do produto, peso do saco e quantidade desejada.</small></article>
+        <article><span>2</span><strong>Define frequência e recebimento</strong><small>Mensal, quinzenal, a cada 45 dias, retirada ou entrega local.</small></article>
+        <article><span>3</span><strong>Loja confirma no WhatsApp</strong><small>Preço, disponibilidade, data e atendimento são combinados antes.</small></article>
+      </div>
+    </section>
+
+    <section class="section" id="formulario-compra-mensal">
+      <div class="section-head">
+        <div><span class="kicker">Agendamento</span><h2>Dados para programar a compra.</h2></div>
+        <p>Preencha os campos e envie o pedido diretamente para o WhatsApp da Magrão Agro Pet.</p>
+      </div>
+
+      <form class="contact-form monthly-feed-form" id="monthlyFeedForm">
+        <div class="monthly-form-note full-field">
+          <strong>Compra mensal sem cobrança automática.</strong>
+          <span>A loja recebe o pedido pelo WhatsApp e confirma preço, disponibilidade, retirada ou entrega antes de finalizar.</span>
+        </div>
+
+        <label>Nome do cliente<input id="monthlyName" type="text" autocomplete="name" maxlength="120" placeholder="Seu nome" required /></label>
+        <label>WhatsApp<input id="monthlyPhone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40" placeholder="Seu WhatsApp" required /></label>
+
+        <label>Tipo de pet
+          <select id="monthlyPetType" required>
+            <option value="">Selecione</option>
+            <option value="Cachorro">Cachorro</option>
+            <option value="Gato">Gato</option>
+            <option value="Pássaro">Pássaro</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </label>
+        <label>Nome do pet<input id="monthlyPetName" type="text" maxlength="120" placeholder="Ex: Thor, Mel, Luna" /></label>
+
+        <label>Porte/peso aproximado
+          <select id="monthlyPetSize">
+            <option value="Não informado">Não informar agora</option>
+            <option value="Pequeno porte / até 10kg">Pequeno porte / até 10kg</option>
+            <option value="Médio porte / 10kg a 25kg">Médio porte / 10kg a 25kg</option>
+            <option value="Grande porte / acima de 25kg">Grande porte / acima de 25kg</option>
+            <option value="Gato filhote/adulto">Gato filhote/adulto</option>
+            <option value="Preciso de orientação">Preciso de orientação</option>
+          </select>
+        </label>
+        <label>Produto do catálogo
+          <select id="monthlyProductSelect">
+            <option value="">Carregando produtos...</option>
+          </select>
+        </label>
+
+        <label class="full-field">Ração/produto desejado<input id="monthlyProduct" type="text" maxlength="180" placeholder="Ex: Ração Premium Cães Adultos 15kg" required /></label>
+
+        <label>Frequência
+          <select id="monthlyFrequency" required>
+            <option value="Mensal">Mensal</option>
+            <option value="Quinzenal">Quinzenal</option>
+            <option value="A cada 45 dias">A cada 45 dias</option>
+            <option value="A cada 60 dias">A cada 60 dias</option>
+            <option value="A combinar com a loja">A combinar com a loja</option>
+          </select>
+        </label>
+        <label>Quantidade por ciclo
+          <select id="monthlyQty" required>
+            <option value="1 unidade/saco por ciclo">1 unidade/saco por ciclo</option>
+            <option value="2 unidades/sacos por ciclo">2 unidades/sacos por ciclo</option>
+            <option value="3 unidades/sacos por ciclo">3 unidades/sacos por ciclo</option>
+            <option value="4 unidades/sacos por ciclo">4 unidades/sacos por ciclo</option>
+            <option value="Consultar quantidade ideal">Quero consultar quantidade ideal</option>
+          </select>
+        </label>
+        <label>Melhor dia
+          <select id="monthlyDay" required>
+            <option value="Todo dia 1">Dia 1</option>
+            <option value="Todo dia 5">Dia 5</option>
+            <option value="Todo dia 10">Dia 10</option>
+            <option value="Todo dia 15">Dia 15</option>
+            <option value="Todo dia 20">Dia 20</option>
+            <option value="Todo dia 25">Dia 25</option>
+            <option value="Final do mês">Final do mês</option>
+            <option value="A combinar">A combinar</option>
+          </select>
+        </label>
+        <label>Lembrete antes da compra
+          <select id="monthlyReminder">
+            <option value="Avisar no dia combinado">Avisar no dia combinado</option>
+            <option value="Avisar 1 dia antes">Avisar 1 dia antes</option>
+            <option value="Avisar 2 dias antes">Avisar 2 dias antes</option>
+            <option value="Avisar 7 dias antes">Avisar 7 dias antes</option>
+          </select>
+        </label>
+        <label>Como deseja receber
+          <select id="monthlyDelivery" required>
+            <option value="Retirar na loja">Retirar na loja</option>
+            <option value="Consultar entrega local">Consultar entrega local</option>
+          </select>
+        </label>
+        <label>Forma de pagamento preferida
+          <select id="monthlyPayment">
+            <option value="A combinar">A combinar</option>
+            <option value="Pix">Pix</option>
+            <option value="Cartão">Cartão</option>
+            <option value="Dinheiro">Dinheiro</option>
+          </select>
+        </label>
+        <label>Bairro<input id="monthlyDistrict" type="text" maxlength="120" placeholder="Ex: Bom Retiro, Centro, Aventureiro" /></label>
+        <label class="full-field">Endereço para entrega, se necessário<input id="monthlyAddress" type="text" maxlength="220" placeholder="Rua, número, bairro e referência" /></label>
+        <label class="full-field">Observações<textarea id="monthlyNotes" maxlength="1200" placeholder="Ex: avisar 2 dias antes, preferência de sabor, pet com restrição alimentar..."></textarea></label>
+
+        <div class="monthly-preview full-field" id="monthlyPreview" aria-live="polite">
+          <strong>Resumo do agendamento</strong>
+          <p>Preencha os dados para visualizar a mensagem que será enviada pelo WhatsApp.</p>
+        </div>
+
+        <button class="primary" type="submit">Enviar agendamento pelo WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer class="footer" id="contato">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-magrao-agropet.png" alt="Magrão Agro Pet" />
+        <p data-store-footer-description>Loja online da Magrão Agro Pet para vender produtos da loja física com catálogo, páginas de produto, carrinho e pedidos pelo WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Comprar</h4>
+        <a href="produtos.html">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="compra-mensal.html">Compra mensal</a>
+        <a href="marcas.html">Marcas</a>
+            </div>
+      <div>
+        <h4>Institucional</h4>
+        <a href="servicos.html">Serviços</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="contato.html">Contato</a>
+        <a data-store-maps-link href="https://www.google.com/maps/search/?api=1&query=R.%20Ten.%20Ant%C3%B4nio%20Jo%C3%A3o%2C%201136%20-%20Bom%20Retiro%2C%20Joinville%20-%20SC%2C%2089222-401" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <a href="https://wa.me/5547996329281" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/magraoagropet/" target="_blank" rel="noopener">Instagram</a>
+        <p data-store-address>R. Ten. Antônio João, 1136 - Bom Retiro, Joinville - SC, 89222-401</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Magrão Agro Pet</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5547996329281" target="_blank" rel="noopener">💬</a>
+
+  <nav class="bottom-nav" data-mobile-bottom-nav>
+    <a href="index.html" data-nav="home"><span>🏠</span><strong>Início</strong></a>
+    <button type="button" data-open-categories data-nav="categories"><span>▦</span><strong>Categorias</strong></button>
+    <button type="button" data-focus-search data-nav="search"><span>🔎</span><strong>Buscar</strong></button>
+    <a href="favoritos.html" data-nav="favorites"><span>♡</span><strong>Favoritos</strong></a>
+    <button type="button" data-open-cart data-nav="cart"><span>🛒</span><strong>Carrinho</strong><b data-cart-count>0</b></button>
+  </nav>
+
+  <button class="mobile-floating-cart" data-open-cart aria-label="Abrir carrinho">
+    <span>🛒</span>
+    <strong data-cart-count>0</strong>
+  </button>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="mobile-filter-overlay" id="mobileFilterOverlay"></div>
+
+  <aside class="mobile-categories-panel" id="mobileCategoriesPanel">
+    <div class="mobile-panel-head">
+      <strong>Categorias</strong>
+      <button data-close-categories>×</button>
+    </div>
+    <div class="mobile-category-list" id="mobileCategoryList"></div>
+  </aside>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <div><strong>Carrinho</strong><small>Finalize pelo WhatsApp</small></div>
+      <button id="closeCart" data-close-cart>×</button>
+    </div>
+
+    <div class="cart-summary-label">Itens do seu pedido</div>
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="total"><span>Total aproximado</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <div class="cart-warning">Valores e disponibilidade sujeitos à confirmação da loja.</div>
+      <button class="primary full" id="whatsappCheckout">Enviar pedido pelo WhatsApp</button>
+      <button class="continue-shopping" data-continue-shopping>Continuar comprando</button>
+      <button class="clear" id="clearCart" data-clear-cart>Limpar carrinho</button>
+    </div>
+  </aside>
+
+<script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/monthly-order.js"></script>
+
+</body>
+</html>

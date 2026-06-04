@@ -1,0 +1,36 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Credenciais e ambiente local
+.env
+.env.*
+*.local
+config/database.local.php
+
+# Dependencias/cache
+node_modules/
+vendor/
+.cache/
+.parcel-cache/
+
+# Logs e temporarios
+*.log
+*.tmp
+*.bak
+*.old
+*.zip
+
+# Dumps/backups de banco
+*.sql.gz
+*.dump
+*.backup
+
+# Uploads reais de clientes/produtos
+uploads/produtos/*
+!uploads/produtos/.htaccess
+!uploads/produtos/index.html
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /database/
+Disallow: /uploads/
+
+Sitemap: https://magraoagropet.com.br/sitemap.xml
