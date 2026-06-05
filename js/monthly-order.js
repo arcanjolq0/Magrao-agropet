@@ -63,7 +63,7 @@
   async function loadCatalogProducts() {
     let products = Array.isArray(window.MAGRAO_DATA?.products) ? window.MAGRAO_DATA.products : [];
 
-    if (!/^https?:$/.test(window.location.protocol)) {
+    if (window.MAGRAO_DATA?.staticDemo === true || !/^https?:$/.test(window.location.protocol)) {
       return products.filter(product => product && product.active !== false);
     }
 

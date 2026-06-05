@@ -1,4 +1,4 @@
-window.MAGRAO_DATA = {
+{
   "staticDemo": true,
   "store": {
     "name": "Magrão Agro Pet",
@@ -783,4 +783,4 @@ window.MAGRAO_DATA = {
       "order": 120
     }
   ]
-};
+}

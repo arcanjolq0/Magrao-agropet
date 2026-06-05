@@ -2,17 +2,16 @@
 .DS_Store
 Thumbs.db
 
-# Credenciais e ambiente local
+# Ambiente local
 .env
 .env.*
 *.local
-config/database.local.php
 
 # Dependencias/cache
 node_modules/
 vendor/
 .cache/
-.parcel-cache/
+.vercel/
 
 # Logs e temporarios
 *.log
@@ -21,12 +20,7 @@ vendor/
 *.old
 *.zip
 
-# Dumps/backups de banco
-*.sql.gz
-*.dump
-*.backup
-
-# Uploads reais de clientes/produtos
+# Uploads reais adicionados depois da demo
 uploads/produtos/*
 !uploads/produtos/.htaccess
 !uploads/produtos/index.html

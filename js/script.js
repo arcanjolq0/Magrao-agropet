@@ -12,6 +12,7 @@ function getDefaultProducts() {
 }
 
 function canUseApi() {
+  if (baseData.staticDemo === true) return false;
   return /^https?:$/.test(window.location.protocol);
 }
 

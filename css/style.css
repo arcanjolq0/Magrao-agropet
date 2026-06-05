@@ -1337,12 +1337,13 @@ main > .section:first-child { padding-top: 48px; }
 .monthly-steps-grid strong{font-size:1.08rem;color:var(--black)}
 .monthly-steps-grid small{color:var(--muted);font-weight:760;line-height:1.5}
 .monthly-feed-form select{border:1px solid var(--line);border-radius:16px;padding:14px;outline:0;font-weight:850;background:white;color:var(--black)}
-.monthly-feed-form input,.monthly-feed-form select,.monthly-feed-form textarea{min-height:50px}
+.monthly-feed-form > *{min-width:0}
+.monthly-feed-form input,.monthly-feed-form select,.monthly-feed-form textarea{min-height:50px;width:100%;max-width:100%}
 .monthly-home-cta{padding-top:0}
 .monthly-cta-card{grid-template-columns:1fr auto}
 .monthly-cta-card h2{font-size:clamp(1.65rem,2.3vw,2.7rem);line-height:1.08;color:var(--black);margin-top:8px}
 .detail-actions .monthly-action{grid-column:1/-1}
-@media(max-width:768px){.monthly-hero-section{padding-top:22px}.monthly-hero-card,.monthly-cta-card{grid-template-columns:1fr;border-radius:24px;padding:24px}.monthly-hero-card h1{font-size:2.15rem;letter-spacing:-1.3px}.monthly-hero-icon{width:92px;height:92px;border-radius:28px;font-size:3.1rem;order:-1}.monthly-hero-actions{display:grid}.monthly-hero-actions .primary,.monthly-hero-actions .outline-btn{width:100%}.monthly-steps-grid{grid-template-columns:1fr}.monthly-feed-form{grid-template-columns:1fr}.monthly-feed-form .full-field{grid-column:auto}.monthly-cta-card .primary{width:100%}}
+@media(max-width:768px){.monthly-hero-section{padding-top:22px}.monthly-hero-card,.monthly-cta-card{grid-template-columns:1fr;border-radius:24px;padding:24px}.monthly-hero-card h1{font-size:2.15rem;letter-spacing:-1.3px}.monthly-hero-icon{width:92px;height:92px;border-radius:28px;font-size:3.1rem;order:-1}.monthly-hero-actions{display:grid}.monthly-hero-actions .primary,.monthly-hero-actions .outline-btn{width:100%}.monthly-steps-grid{grid-template-columns:1fr}.monthly-feed-form{grid-template-columns:minmax(0,1fr)}.monthly-feed-form .full-field{grid-column:auto}.monthly-cta-card .primary{width:100%}}
 
 /* Ajuste do card de compra mensal na home */
 .side-banner p{margin:10px 0 0;max-width:270px;color:rgba(255,255,255,.92);font-weight:800;line-height:1.45;position:relative;z-index:2}

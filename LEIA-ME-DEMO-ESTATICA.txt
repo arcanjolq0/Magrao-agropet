@@ -1,0 +1,35 @@
+Magrão Agro Pet - Demonstração estática para cliente
+
+Esta versão foi preparada apenas para visualização do site público em ambiente estático.
+Ela não precisa de PHP, MySQL, XAMPP, banco de dados ou painel administrativo para mostrar o catálogo.
+
+Como abrir:
+1. Abra o arquivo index.html no navegador; ou
+2. Suba todos os arquivos desta pasta em uma hospedagem estática.
+
+O que funciona nesta demonstração:
+- página inicial;
+- catálogo de produtos;
+- página individual do produto;
+- busca;
+- filtros;
+- ofertas;
+- favoritos;
+- carrinho;
+- finalização pelo WhatsApp;
+- compra mensal de ração;
+- serviços;
+- contato;
+- versão mobile.
+
+Limitações desta versão:
+- não possui painel administrativo;
+- não salva produtos em banco de dados;
+- não importa XML pelo navegador;
+- não atualiza estoque automaticamente.
+
+Onde está o catálogo da demonstração:
+- js/data.js
+- data/produtos.json
+
+Para a versão final administrável, usar a versão PHP/MySQL com painel ADM.

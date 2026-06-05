@@ -74,7 +74,7 @@
     if (submitButton) submitButton.disabled = true;
     setStatus('Registrando solicitação e preparando WhatsApp...', 'loading');
 
-    if (!/^https?:$/.test(window.location.protocol)) {
+    if (window.MAGRAO_DATA?.staticDemo === true || !/^https?:$/.test(window.location.protocol)) {
       setStatus('Abrindo WhatsApp para confirmar a solicitação.', 'success');
       window.open(fallbackWhatsApp(data), '_blank', 'noopener');
       if (submitButton) submitButton.disabled = false;

@@ -1,86 +1,62 @@
-# Magrao Agro Pet
+# Magrao Agro Pet - Demo Estatica
 
-Site institucional e catalogo online para a Magrao Agro Pet, com painel administrativo em PHP/MySQL para gerenciar produtos, estoque, categorias, horarios, agendamentos e configuracoes da loja.
+Versao estatica do site Magrao Agro Pet preparada para publicacao na Vercel.
 
-## Destaques
+Esta versao usa catalogo local em JavaScript/JSON e nao depende de PHP, MySQL, XAMPP ou painel administrativo. Ela foi preparada para demonstracao publica do site, com foco em navegacao, catalogo, carrinho e contato pelo WhatsApp.
 
-- Home responsiva com carrossel, categorias, ofertas e atalhos comerciais.
-- Catalogo com busca, filtros, marcas, favoritos e pagina individual de produto.
-- Carrinho com finalizacao via WhatsApp.
-- Produto com controle de estoque, produto sem estoque e exibicao opcional da quantidade.
-- Compra mensal de racao com mensagem estruturada para WhatsApp.
-- Agendamento de banho, tosa e atendimento veterinario.
-- Painel administrativo com login, CRUD de produtos/categorias, estoque, configuracoes, horarios e agendamentos.
-- Importacao e exportacao de produtos por XML.
-- Exportacao CSV protegida contra formula injection.
-- Estrutura pronta para hospedagem PHP/MySQL, como Hostinger.
+## O Que Funciona
 
-## Stack
+- Home responsiva.
+- Catalogo estatico de produtos.
+- Busca e filtros.
+- Ofertas.
+- Marcas.
+- Favoritos.
+- Pagina individual do produto.
+- Produto em estoque e produto indisponivel.
+- Carrinho com finalizacao pelo WhatsApp.
+- Compra mensal de racao pelo WhatsApp.
+- Servicos e agendamento abrindo WhatsApp.
+- Contato, mapa e links da loja.
+- Layout desktop e mobile.
 
-- HTML5, CSS3 e JavaScript puro.
-- PHP 8+ com PDO.
-- MySQL/MariaDB.
-- Apache com `.htaccess`.
+## Catalogo Estatico
+
+Os dados da demonstracao ficam em:
+
+```text
+js/data.js
+data/produtos.json
+data/catalogo-demo.json
+```
+
+O arquivo `js/data.js` define `staticDemo: true`, desativando as chamadas para APIs PHP em ambiente HTTP/Vercel.
+
+## Deploy Na Vercel
+
+Este projeto nao precisa de comando de build.
+
+Configuracao:
+
+```text
+Framework Preset: Other
+Build Command: vazio
+Output Directory: vazio / raiz do projeto
+Install Command: vazio
+```
+
+A Vercel deve servir diretamente o `index.html` da raiz.
 
 ## Estrutura
 
 ```text
-admin/      Painel administrativo
-api/        Endpoints publicos JSON
-assets/     Logo e imagens do site
-config/     Conexao e configuracoes PHP
-css/        Estilos desktop e mobile
-database/   Scripts SQL de instalacao/atualizacao
-js/         Interacoes do catalogo, carrinho e formularios
-uploads/    Pasta segura para imagens enviadas pelo painel
+assets/   Imagens e logo
+css/      Estilos desktop/mobile
+data/     Catalogo estatico em JSON
+js/       Interacoes do site
+uploads/  Placeholders seguros
 ```
-
-## Como Rodar Localmente
-
-1. Copie a pasta para o servidor local, por exemplo XAMPP.
-2. Crie um banco MySQL chamado `magrao_agropet`.
-3. Importe `database/install.sql`.
-4. Confira as credenciais em `config/database.php`.
-5. Acesse o site pelo Apache ou pelo servidor embutido do PHP:
-
-```bash
-php -S 127.0.0.1:8080
-```
-
-6. Acesse `/admin/setup.php` para criar o primeiro administrador.
-
-## Publicacao Em Hospedagem
-
-1. Envie os arquivos para `public_html`.
-2. Crie banco e usuario MySQL no painel da hospedagem.
-3. Importe `database/install.sql`.
-4. Atualize `config/database.php` com os dados reais do banco.
-5. Acesse `/admin/setup.php` e crie o administrador.
-6. Remova ou renomeie `admin/setup.php` depois do primeiro acesso.
-7. Mantenha os arquivos `.htaccess` no envio.
-
-## Seguranca Implementada
-
-- Login administrativo com senha via `password_hash`.
-- CSRF nas acoes administrativas.
-- SQL com prepared statements nos fluxos de entrada.
-- Upload de imagem validado por tamanho, MIME real e extensao.
-- XML com limite de tamanho e `LIBXML_NONET`.
-- Pastas `config`, `database` e `uploads` protegidas por `.htaccess`.
-- Arquivos internos do admin iniciados por `_` bloqueados no Apache.
-
-## Status Da Auditoria
-
-Auditoria final executada antes da publicacao:
-
-- PHP lint: 32 arquivos OK.
-- JavaScript syntax check: 5 arquivos OK.
-- Instalacao limpa do SQL validada.
-- Site publico desktop e mobile validado.
-- Painel administrativo validado.
-- Importacao/exportacao XML e CSV validadas.
-- Carrinho, favoritos, busca, filtros e WhatsApp validados.
 
 ## Observacao
 
-Este projeto foi desenvolvido para uma loja real e pode exigir substituicao de imagens, produtos e credenciais antes da publicacao final.
+Esta demo nao inclui painel administrativo, banco de dados, importacao XML ou endpoints PHP. Para a versao administravel, use a versao PHP/MySQL do projeto.
