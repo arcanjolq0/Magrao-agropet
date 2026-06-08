@@ -1,0 +1,8 @@
+Magrão Agro Pet - Demo estática com cabeçalho mobile corrigido
+
+Alterações:
+- removida a caixa vazia abaixo da barra de busca no mobile;
+- sugestões rápidas da busca agora aparecem somente quando o usuário toca/foca no campo;
+- cabeçalho mobile foi compactado mantendo logo, menu e busca;
+- atalhos rápidos abaixo da busca foram mantidos mais compactos;
+- versão desktop preservada.
